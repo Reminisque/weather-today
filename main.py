@@ -21,8 +21,8 @@ if __name__ == "__main__":
 
         soup = BeautifulSoup(response, "html.parser", parse_only=only_weather)
 
-        f = open("response.txt", "w+")
-        f.write(soup.prettify())
+        # f = open("response.txt", "w+")
+        # f.write(soup.prettify())
 
         weather = soup.find(id="wob_wc")
         location = soup.find(id="wob_loc")
